@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 10rem;
+  width: 100%;
+  background-image: url(./assets/body\ 2.png);
+  background-size: contain;
+  background-repeat: round;
+}
+#titleOfWebsite {
+  text-shadow: 1px 1px 1px #000000;
+  background-color: #d8d8d8ea;
+  border-radius: 50%;
+  padding: 2rem;
+  margin: 1rem;
+}
+.topNav {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.topNavList {
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: aquamarine;
+  border-radius: 50%;
+}
+.topNavList > a:hover {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem;
+  border-radius: 40%;
+}
+.informationCompany {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.informationCompanyLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+  padding-left: 1rem;
+}
+
+.contactButton {
+  padding: 1rem;
+  border-radius: 10%;
+  background-color: aquamarine;
+  color: black;
+  text-decoration: none;
+}
+.contactButton:hover {
+  background-color: aqua;
+  color: rgb(255, 0, 0);
+  text-decoration: underline;
+}
+
+.people {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.people > h3 {
+  margin: 2rem;
+}
+.people > ul > li {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.imgPeople {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  margin: 1rem;
+  padding: 1rem;
+}
+.peopleList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.peopleListGeneral {
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+  width: 90%;
+  background-image: url(./assets/body\ 3.png);
+  background-size: contain;
+  background-repeat: round;
+}
+.footerTitleList {
+  margin-top: 0.5rem;
+}
+.footerList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-style: oblique;
+  background-color: rgba(255, 228, 196, 0.9);
+  padding: 1rem;
+  border-radius: 20%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.footerList > li {
+  font-size: medium;
+  font-style: normal;
+  padding: 0.1rem;
+  margin: 0.6rem;
+}
+
+.footerList > li > a:hover {
+  font-weight: bold;
+  background-color: rgba(255, 228, 196);
+  border-radius: 20%;
+}
+
+@media (min-width: 700px) and (max-width: 1050px) {
+  .imgPeople {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .navMenu {
+    display: flex;
+    text-align: center;
+  }
+
+  .topNav {
+    display: flex;
+    box-sizing: content-box;
+    font-size: small;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .topNavList {
+    display: flex;
+    flex-direction: column;
+    padding: 0.1rem;
+    margin: 0.1rem;
+    background-color: aquamarine;
+    border-radius: 10%;
+  }
+  .topNavList > a:hover {
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 1rem;
+  }
+
+  .imgPeople {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .imgSectionPeople {
+    display: none;
+  }
+  .informationCompanyRight {
+    display: none;
+  }
+  footer,
+  .footerList {
+    font-size: medium;
+  }
+  .footerList > li {
+    font-size: small;
+  }
+  h4 {
+    font-size: small;
+  }
+}
